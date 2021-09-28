@@ -15,7 +15,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="Catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
         </li>
       </ul>
       <a class="navigation-logo" href="index.html"><img class="navigation-logo-sedona" src="#" alt="Седона"></a>
@@ -60,7 +60,7 @@
               </li>
               <li class="catalog-filter-item">
                 <input class="wi-fi-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
-                <label class="wi-fi" for="wi-fi">Парковка</label>
+                <label class="wi-fi" for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -87,11 +87,11 @@
             <div class="range-block">
               <div class="range-block-change">
                 <div class="range-block-min">
-                  <input>
+                  <input type="button" class="min">
                   <span>от</span>
                 </div>
                 <div class="range-block-max">
-                  <input>
+                  <input type="button" class="max">
                   <span>до</span>
                 </div>
               </div>
@@ -112,7 +112,7 @@
     </section>
     <section class="sorting">
       <h2 class="visually-hidden">Сортировка гостиниц</h2>
-      <b class="result-sort">Найдено гостиниц: 38</b>
+      <p class="result-sort">Найдено гостиниц: 38</p>
       <label class="visually-hidden" for="sorting-list">Выбор пункта сортировки</label>
       <select class="select-control" id="sorting-list" name="sorting-list">
         <option value="chep">Сначало дешевые</option>
@@ -120,9 +120,9 @@
         <option value="expensive">Сначало дорогие</option>
       </select>
       <div class="button-block-filter">
-        <a class="mode-list" href="#"><span class="visually-hidden">Мод списка</span></a>
-        <a class="mode-tile" href="#"><span class="visually-hidden">Мод карточек</span></a>
-        <a class="mode-slideshow" href="#"><span class="visually-hidden">Мод слайдшоу</span></a>
+        <a class="mode-tiles" href="#"><span class="visually-hidden">В виде плиток</span></a>
+        <a class="mode-card" href="#"><span class="visually-hidden">В виде карточек</span></a>
+        <a class="mode-list" href="#"><span class="visually-hidden">В виде списка</span></a>
       </div>
     </section>
     <section class="search-results">
@@ -132,8 +132,7 @@
           <li class="lodging-item">
             <div class="lodging-item-img">
               <a class="lodging-card-link" href="lodging.html">
-                <img class="lodging-card-img" src="#" alt="Предлагаемое жилье">
-              </a>
+                <img class="lodging-card-img" src="#" alt="Предлагаемое жилье"></a>
             </div>
             <div class="lodging-item-info">
               <a class="lodging-card-link" href="lodging.html">
