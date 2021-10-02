@@ -1,0 +1,231 @@
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #242424;
+}
+
+.page-header-navigation{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-link{
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  line-height: 25,88px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation-search{
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation-favorites{
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+}
+
+.favorites-number{
+  background-color: #7DB54F;
+  font-size: 10px;
+  line-height: 13px;
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.navigation-button{
+  background-color: #756257;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main{
+  background-image: url("../img/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+.qreeting{
+  text-align: center;
+}
+
+.qreeting-descript{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-heading{
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.causes{
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.benefits-item{
+  text-align: center;
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.benefits-item-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.offer-title.benefits-item-title{
+  color: #000000;
+}
+
+.benefits-item-food{
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.benefits-item-home{
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #333333;
+}
+
+.benefits-item-gift{
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #333333;
+}
+
+.benefits-item-area{
+  background-color:rgba(131, 179, 211, 0.12);;
+  color: #000000;
+}
+
+.benefits-item-road{
+  background-color: rgba(131, 179, 211, 0.2);
+  color: #000000;
+}
+
+.benefits-item-tourist{
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.search{
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #000000;
+}
+
+.search-question{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-prompt{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.search-hotel{
+  background-color: #756257;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subscription{
+  background-image: url("../img/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscription-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscription-description{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscription-button{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.footer{
+  background-color: #FFFFFF;
+  color: #242424;
+}
+
+.social-link-twitter{
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.social-link-facebook{
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+}
+
+.social-link-youtube{
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-phone{
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+
