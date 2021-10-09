@@ -21,13 +21,15 @@ html{
 body{
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .button{
@@ -63,7 +65,7 @@ body{
 
 .navigation{
   display: flex;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -136,7 +138,7 @@ body{
 
 .main-container{
   flex-grow: 1;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -148,17 +150,14 @@ body{
 }
 .qreeting{
   text-align: center;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
-
-
-
 
 .qreeting-descript{
   background-color: #ffffff;
   color: #000000;
-  width: 720px;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -173,6 +172,11 @@ body{
   font-size: 22px;
   line-height: 36px;
   color: #333333;
+}
+
+img {
+  display:block;
+  margin: 0 auto;
 }
 
 .benefits-list{
@@ -360,9 +364,9 @@ body{
   border-radius: 0px 10px 10px 0px;
 }
 
-.footer-container{
+.footer{
   display: flex;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -416,11 +420,38 @@ body{
 }
 
 .filter{
+
+
   background-image: url("../img/catalog/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #333333;
   color: #FFFFFF;
+}
+
+.alignment{
+  padding-left: 72px;
+  padding-right: 71px;
+}
+
+.filter-form{
+  display: flex;
+}
+
+.filter-item{
+  width: 150px;
+  padding: 0;
+  margin-right: 61px;
+}
+
+.filter-form :nth-child(2).filter-item{
+  width: 164px;
+  margin-right: 127px;
+}
+
+.filter-form :nth-child(3).filter-item{
+  width: 287px;
+  margin-right: 108px;
 }
 
 h1{
@@ -430,7 +461,9 @@ h1{
 }
 
 .filter-breadcrumbs{
+  display: flex;
   list-style: none;
+  padding:  0;
 }
 
 .filter-breadcrumbs-item:first-child{
@@ -446,6 +479,7 @@ h1{
 
 .filter-list{
   list-style-type: none;
+  padding: 0;
 }
 
 .filter-item-title{
@@ -458,7 +492,12 @@ h1{
   line-height: 23px;
 }
 
-
+.filter-button-container{
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  margin: 0 ;
+}
 
 .filter-button-close{
   background-color: transparent;
@@ -470,12 +509,20 @@ h1{
   text-transform: none;
 }
 
+.sorting{
+  display: flex;
+  width: 100%;
+}
+
 .sorting-result{
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
   color: #000000;
   text-transform: uppercase;
+  width: 380px;
+  margin-right: 149px;
+  padding: 0;
 }
 
 .sorting-select{
@@ -484,6 +531,14 @@ h1{
   color: #333333;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  width: 287px;
+  margin-right: 81px;
+}
+
+.sorting-mode{
+  display: flex;
+  width: 167px;
+  justify-content: space-between;
 }
 
 .mode-item-active{
@@ -491,15 +546,18 @@ h1{
   border-radius: 4px;
   width: 16px;
   height: 14px;
+  padding: 15px;
 }
 .mode-tiles{
   background-image: url("../img/catalog/mode-tile.svg");
   background-repeat: no-repeat;
+
 }
 
 .mode-card{
   background-image: url("../img/catalog/mode-slideshow.svg");
   background-repeat: no-repeat;
+
 }
 
 .mode-list{
@@ -508,8 +566,10 @@ h1{
   border: 2px solid #000000;
 }
 
-.lodging-list{
-  list-style: none;
+.lodging-item{
+  width: 100%;
+  display: flex;
+  padding: 0;
 }
 
 .lodging-item-link{
@@ -519,6 +579,11 @@ h1{
   text-decoration: none;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.lodging-item-info{
+  width: 320px;
+  margin-left: 36px;
 }
 
 .search-results-type p{
@@ -536,6 +601,11 @@ h1{
   background-color: #7DB54F;
 }
 
+.search-results-rating{
+  margin-left:  auto;
+  width: 160px;
+}
+
 .search-results-rating-text{
   background: #F2F2F2;
   border-radius: 4px;
@@ -550,8 +620,11 @@ h1{
 }
 
 .pagination-show-more{
+
   font-size: 20px;
   line-height: 26px;
+  width: 625px;
+
 }
 
 .pagination-link{
