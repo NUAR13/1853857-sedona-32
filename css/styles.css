@@ -139,13 +139,11 @@ body{
   flex-grow: 1;
 }
 
-.main{
+.qreeting{
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
-}
-.qreeting{
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -194,6 +192,8 @@ img {
   color: #ffffff;
   background-color: #83B3D3;
   width: 400px;
+  padding-top:98px;
+  padding-bottom:77px;
 
 }
 
@@ -281,8 +281,7 @@ img {
 .benefits-tourist-area{
   background-color:rgba(131, 179, 211, 0.12);;
   color: #000000;
-  padding-top:98px;
-  padding-bottom:77px;
+
 }
 
 .benefits-item-road{
@@ -328,13 +327,13 @@ img {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #000000;
-  text-align: center;
   color: #FFFFFF;
 }
 
 .subscription{
   padding-top: 98px;
   padding-bottom: 93px;
+  text-align: center;
 }
 
 .subscription-title{
@@ -374,6 +373,7 @@ img {
 
 .social{
   display: flex;
+  max-width: 350px;
   width: 128px;
   margin-right: auto;
   list-style: none;
