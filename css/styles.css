@@ -14,9 +14,7 @@
   font-display: swap;
 }
 
-html{
-  height: 100%;
-}
+*, *::before, *::after { box-sizing: border-box; }
 
 body{
   display: flex;
@@ -67,21 +65,23 @@ body{
   display: flex;
   width: 100%;
   margin: 0 auto;
+  padding-left: 72px;
+  padding-right: 71px;
 }
 
 .navigation-list{
-  margin: 0;
+
   padding: 0;
-  width: 410px;
-  margin-left: 71px;
-  margin-right: 50px;
-  list-style: none;
+  width: 309px;
+  margin-right: auto;
+  list-style : none;
 }
 
 .navigation-user{
-  width: 310px;
-  margin-right: 72px;
+  width: 309px;
   margin-left: auto;
+  margin-right: 0;
+
 }
 
 .navigation-link{
@@ -97,7 +97,6 @@ body{
   display: block;
   width: 138px;
   height: 70px;
-  margin: 0 auto;
   padding: 0;
 }
 
@@ -138,8 +137,6 @@ body{
 
 .main-container{
   flex-grow: 1;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .main{
@@ -190,8 +187,6 @@ img {
 
 .benefits-container{
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .benefits-item{
@@ -199,7 +194,7 @@ img {
   color: #ffffff;
   background-color: #83B3D3;
   width: 400px;
-  height: 384px;
+
 }
 
 .benefits-item-title{
@@ -224,6 +219,8 @@ img {
   background: #FFFFFF;
   color: #333333;
   position: relative;
+  padding-top:184px;
+  padding-bottom:79px;
 }
 
 .benefits-item-food::before{
@@ -243,6 +240,8 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
   color: #333333;
   position: relative;
+  padding-top:184px;
+  padding-bottom:79px;
 }
 
 .benefits-item-home::before{
@@ -262,6 +261,8 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
   color: #333333;
   position: relative;
+  padding-top:184px;
+  padding-bottom:79px;
 }
 
 .benefits-item-gift::before{
@@ -277,26 +278,25 @@ img {
   height: 76px;
 }
 
-.benefits-item-area{
+.benefits-tourist-area{
   background-color:rgba(131, 179, 211, 0.12);;
   color: #000000;
+  padding-top:98px;
+  padding-bottom:77px;
 }
 
 .benefits-item-road{
   background-color: rgba(131, 179, 211, 0.2);
   color: #000000;
-}
-
-.benefits-item-tourist{
-  background-color: rgba(131, 179, 211, 0.12);
-  color: #000000;
+  padding-top:98px;
+  padding-bottom:77px;
 }
 
 .search{
   background-color: #FFFFFF;
   text-align: center;
   color: #000000;
-  width: 720px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -332,9 +332,9 @@ img {
   color: #FFFFFF;
 }
 
-.subscription-container-info{
-  width: 800px;
-  margin: 0 auto;
+.subscription{
+  padding-top: 98px;
+  padding-bottom: 93px;
 }
 
 .subscription-title{
@@ -368,14 +368,16 @@ img {
   display: flex;
   width: 100%;
   margin: 0 auto;
+  padding: 40px 71px 30px 72px;
+
 }
 
 .social{
   display: flex;
   width: 128px;
-  margin-left: 72px;
-  margin-right: 40px;
+  margin-right: auto;
   list-style: none;
+  padding: 0;
 }
 
 .social-link-twitter{
@@ -402,11 +404,15 @@ img {
   height: 16px;
 }
 
+.footer-link-htmlacademy{
+  display: block;
+  margin-left: auto;
+  width: 115px;
+}
+
 .logo-htmlacademy-img{
   width: 114.9px;
   height: 32.9px;
-  margin-right: 72px;
-  margin-left: 53px;
 }
 
 .footer-phone{
@@ -416,12 +422,9 @@ img {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  width: 720px;
 }
 
 .filter{
-
-
   background-image: url("../img/catalog/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -520,7 +523,6 @@ h1{
   line-height: 39px;
   color: #000000;
   text-transform: uppercase;
-  width: 380px;
   margin-right: 149px;
   padding: 0;
 }
@@ -531,13 +533,11 @@ h1{
   color: #333333;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
-  width: 287px;
   margin-right: 81px;
 }
 
 .sorting-mode{
   display: flex;
-  width: 167px;
   justify-content: space-between;
 }
 
@@ -616,6 +616,7 @@ h1{
 }
 
 .pagination-list{
+  display: flex;
   list-style: none;
 }
 
@@ -628,6 +629,7 @@ h1{
 }
 
 .pagination-link{
+  display: inline-block;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
