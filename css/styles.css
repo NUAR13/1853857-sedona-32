@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -140,13 +140,15 @@ body{
 }
 
 .qreeting{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.qreeting-img{
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .qreeting-descript{
@@ -374,7 +376,7 @@ img {
 .social{
   display: flex;
   max-width: 350px;
-  width: 128px;
+
   margin-right: auto;
   list-style: none;
   padding: 0;
