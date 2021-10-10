@@ -655,8 +655,9 @@ h1{
 
 .amount-text{
   line-height: 23px;
-  color: #333333;
   background-color: #FFFFFF;
+  color: #333333;
+
 }
 
 .select-control{
