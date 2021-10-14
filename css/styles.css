@@ -70,7 +70,9 @@ body{
 }
 
 .navigation-list{
-
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
   width: 309px;
   margin-right: auto;
@@ -78,13 +80,18 @@ body{
 }
 
 .navigation-user{
+  display: flex;
+  flex-wrap: wrap;
   width: 309px;
   margin-left: auto;
   margin-right: 0;
-
+  align-items: center;
 }
 
 .navigation-link{
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: #000000;
   font-size: 20px;
   line-height: 26px;
@@ -92,6 +99,18 @@ body{
   text-align: center;
   text-decoration: none;
 }
+
+.navigation-list :nth-child(2) .navigation-link{
+  margin-right:  33px;
+  margin-left:  33px;
+}
+
+.navigation-user :nth-child(2) .navigation-link{
+ margin-left: 20px;
+  margin-right: 21px;
+  padding:0 20px ;
+}
+
 
 .navigation-logo-sedona{
   display: block;
@@ -106,7 +125,10 @@ body{
   display: block;
   width: 18px;
   height: 17px;
+  margin-left: auto;
+  padding: 0;
 }
+
 
 .navigation-favorites{
   background-image: url("../img/heart.svg");
@@ -149,6 +171,8 @@ body{
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .qreeting-descript{
@@ -163,12 +187,16 @@ body{
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 63px;
 }
 
 .causes{
   font-size: 22px;
   line-height: 36px;
   color: #333333;
+  margin-top: 23px;
+  margin-bottom: 79px;
 }
 
 img {
@@ -204,6 +232,13 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.benefits-item-description{
+  margin: 0;
+  margin-top: 26px;
 }
 
 .offer-title{
@@ -215,6 +250,7 @@ img {
 
 .offer-title h3{
   color: #000000;
+  margin-top: 23px;
 }
 
 .benefits-item-food{
@@ -236,6 +272,7 @@ img {
   transform: translateX(-50%);
   width: 74px;
   height: 70px;
+  margin-top: 91px;
 }
 
 .benefits-item-home{
@@ -257,6 +294,7 @@ img {
   transform: translateX(-50%);
   width: 75px;
   height: 72px;
+  margin-top: 89px;
 }
 
 .benefits-item-gift{
@@ -278,12 +316,12 @@ img {
   transform: translateX(-50%);
   width: 64px;
   height: 76px;
+  margin-top: 85px;
 }
 
 .benefits-tourist-area{
   background-color:rgba(131, 179, 211, 0.12);;
   color: #000000;
-
 }
 
 .benefits-item-road{
@@ -299,6 +337,8 @@ img {
   color: #000000;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 91px;
+  padding-top: 98px;
 }
 
 .search-question{
@@ -306,12 +346,16 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .search-prompt{
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
+  margin-bottom: 73px;
 }
 
 .search-hotel{
@@ -334,7 +378,7 @@ img {
 
 .subscription{
   padding-top: 98px;
-  padding-bottom: 93px;
+  padding-bottom: 94px;
   text-align: center;
 }
 
@@ -342,11 +386,15 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .subscription-description{
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .subscription input{
@@ -370,16 +418,19 @@ img {
   width: 100%;
   margin: 0 auto;
   padding: 40px 71px 30px 72px;
-
 }
 
 .social{
   display: flex;
+  flex-wrap: wrap;
   max-width: 350px;
-
   margin-right: auto;
   list-style: none;
   padding: 0;
+}
+
+.social-link{
+  margin-right: 30px;
 }
 
 .social-link-twitter{
@@ -432,6 +483,8 @@ img {
   background-repeat: no-repeat;
   background-color: #333333;
   color: #FFFFFF;
+  padding-top: 35px;
+  padding-bottom: 83px;
 }
 
 .alignment{
@@ -460,6 +513,7 @@ img {
 }
 
 h1{
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -469,6 +523,8 @@ h1{
   display: flex;
   list-style: none;
   padding:  0;
+  margin-top: 5px;
+  margin-bottom: 45px;
 }
 
 .filter-breadcrumbs-item:first-child{
@@ -476,6 +532,8 @@ h1{
   background-repeat: no-repeat;
   width: 12px;
   height: 11.7px;
+  margin-right: 26px;
+  align-self: center;
 }
 
 .filter-breadcrumbs-item{
@@ -504,6 +562,10 @@ h1{
   margin: 0 ;
 }
 
+.filter-button{
+  margin-top: auto;
+}
+
 .filter-button-close{
   background-color: transparent;
   border: none;
@@ -512,11 +574,14 @@ h1{
   line-height: 23px;
   color: #FFFFFF;
   text-transform: none;
+  margin-top: 20px;
 }
 
 .sorting{
   display: flex;
   width: 100%;
+  padding-top: 44px;
+  padding-bottom: 42px;
 }
 
 .sorting-result{
@@ -525,7 +590,8 @@ h1{
   line-height: 39px;
   color: #000000;
   text-transform: uppercase;
-  margin-right: 149px;
+  margin: 0;
+  margin-right: auto;
   padding: 0;
 }
 
@@ -535,12 +601,12 @@ h1{
   color: #333333;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
-  margin-right: 81px;
 }
 
 .sorting-mode{
   display: flex;
-  justify-content: space-between;
+
+  margin-left: auto;
 }
 
 .mode-item-active{
@@ -549,6 +615,7 @@ h1{
   width: 16px;
   height: 14px;
   padding: 15px;
+  margin-right: 8px;
 }
 .mode-tiles{
   background-image: url("../img/catalog/mode-tile.svg");
@@ -566,12 +633,24 @@ h1{
   background-image: url("../img/catalog/mode-list.svg");
   background-repeat: no-repeat;
   border: 2px solid #000000;
+  margin: 0;
+}
+
+.lodging-list{
+  margin: 0;
+
 }
 
 .lodging-item{
+  border-top: 1px solid #E6E6E6;
   width: 100%;
   display: flex;
-  padding: 0;
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+
+.lodging-list :last-child.lodging-item{
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .lodging-item-link{
@@ -588,11 +667,17 @@ h1{
   margin-left: 36px;
 }
 
+.lodging-item-title{
+  margin: 0;
+  margin-bottom: 1px;
+}
+
 .search-results-type p{
   font-size: 18px;
   line-height: 23px;
   color: #333333;
   background-color: #FFFFFF;
+  margin: 0;
 }
 
 .button-search-info{
@@ -615,19 +700,50 @@ h1{
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  margin: 0;
+  margin-top: 72px;
+}
+
+.search-results-rating-stars{
+  display: flex;
+  justify-content: center;
+}
+
+.rating-star{
+  margin-right: 7px;
+}
+
+.search-results-rating-stars :last-child.rating-star{
+  margin-right: 0;
 }
 
 .pagination-list{
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.show-more{
+  padding: 216px;
+  padding-top: 31px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E6E6E6;
+  margin-bottom: 31px;
+  margin-left: 72px;
+  margin-right: 71px;
 }
 
 .pagination-show-more{
-
   font-size: 20px;
   line-height: 26px;
   width: 625px;
+}
 
+.pagination-item{
+  margin-right: 8px;
+  max-width: 55px;
+  max-height: 55px;
 }
 
 .pagination-link{
@@ -646,6 +762,7 @@ h1{
 
 .pagination-end{
   padding: 12px;
+  margin: 0;
 }
 
 .pagination-current{
@@ -673,6 +790,8 @@ h1{
   background-color: #FFFFFF;
   color: #000000;
   text-align: center;
+  padding-top: 89px;
+  padding-bottom: 137px;
 }
 
 .subscription-inner p{
