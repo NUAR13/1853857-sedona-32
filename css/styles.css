@@ -697,13 +697,8 @@ img {
 
 .rating-star{
   display: block;
-  width: 18px;
+  max-width: 110px;
   height: 17px;
-  margin-right: 7;
-}
-
-.rating-star+ .rating-star{
-  margin-left: 7px;
 }
 
 .pagination-list{
