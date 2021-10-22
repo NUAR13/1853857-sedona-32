@@ -9,7 +9,7 @@
 
 <body>
   <header class="page-header-navigation">
-    <nav class="navigation">
+    <nav class="navigation alignment">
 
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -65,40 +65,40 @@
         <h2 class="visually-hidden">Список фильтров каталога</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
-          <fieldset class="filter-item">
+          <fieldset class="filter-item filter-infrastructure">
             <legend class="filter-item-title">Инфраструктура:</legend>
 
             <ul class="filter-list filter-list-infrastructure">
               <li class="filter-list-item">
-                <input class="filter-input " type="checkbox" checked name="pool" id="pool">
-                <label class="filter-label" for="pool">Бассейн</label>
+                <input class="filter-input" type="checkbox" checked name="pool" id="pool"><label class="filter-label" for="pool">Бассейн</label>
+
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="checkbox" checked name="parking" id="parking">
-                <label class="filter-label" for="parking">Парковка</label>
+                <input class="filter-input" type="checkbox" checked name="parking" id="parking"><label class="filter-label" for="parking">Парковка</label>
+
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="checkbox" name="wi-fi" id="wi-fi">
-                <label class="filter-label" for="wi-fi">Wi-Fi</label>
+                <input class="filter-input" type="checkbox" name="wi-fi" id="wi-fi"><label class="filter-label" for="wi-fi">Wi-Fi</label>
+
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="filter-item">
+          <fieldset class="filter-item filter-title">
             <legend class="filter-item-title">Тип жилья:</legend>
 
             <ul class="filter-list filter-list-type">
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" checked value="hotel" id="hotel">
-                <label class="filter-label" for="hotel">Гостиница</label>
+                <input class="filter-input " type="radio" name="housing-type" checked value="hotel" id="hotel"><label class="filter-label" for="hotel">Гостиница</label>
+
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" value="motel" id="motel">
-                <label class="filter-label" for="motel">Мотель</label>
+                <input class="filter-input " type="radio" name="housing-type" value="motel" id="motel"><label class="filter-label" for="motel">Мотель</label>
+
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" value="apartments" id="apartments">
-                <label class="filter-label" for="apartments">Апартаменты</label>
+                <input class="filter-input " type="radio" name="housing-type" value="apartments" id="apartments"><label class="filter-label" for="apartments">Апартаменты</label>
+
               </li>
             </ul>
           </fieldset>
@@ -341,9 +341,9 @@
       <p class="subscription-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш email</label>
-          <input type="text" id="email" name="email" placeholder="Ваш e-mail">
-          <button class="button subscription-button" type="submit">Подписаться</button>
-      </form>
+          <input type="text" id="email" name="email" placeholder="Ваш e-mail"><button class="button subscription-button" type="submit">Подписаться</button>
+
+        </form>
     </article>
 
   </main>
