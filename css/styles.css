@@ -468,6 +468,7 @@ img {
 .footer-link-htmlacademy{
   display: block;
   width: 115px;
+  margin-left: auto;
 }
 
 .logo-htmlacademy-img{
@@ -731,15 +732,14 @@ width: 287px;
   font-size: 24px;
 }
 
-.search-results-type{
-  display: flex;
-  width: 235px;
-  max-width: 320px;
-  justify-content: space-between;
+.search-results-type {
+
   margin-bottom: auto;
 }
 
 .search-results-type p{
+  display: inline-block;
+  width: 157px;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
