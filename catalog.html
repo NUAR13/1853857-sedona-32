@@ -9,7 +9,7 @@
 
 <body>
   <header class="page-header-navigation">
-    <nav class="navigation">
+    <nav class="navigation alignment">
 
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -53,7 +53,7 @@
         <h1>Гостиницы Седоны</h1>
         <ul class="filter-breadcrumbs">
           <li class="filter-breadcrumbs-item">
-            <a class="filter-breadcrumbs-link" href="index.html" aria-label="Главная"></a>
+            <a class="filter-breadcrumbs-link filter-breadcrumbs-home" href="index.html" aria-label="Главная"></a>
           </li>
           <li class="filter-breadcrumbs-item">
             <a class="filter-breadcrumbs-link">Гостиницы</a>
@@ -65,40 +65,40 @@
         <h2 class="visually-hidden">Список фильтров каталога</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
-          <fieldset class="filter-item">
+          <fieldset class="filter-item filter-infrastructure">
             <legend class="filter-item-title">Инфраструктура:</legend>
 
             <ul class="filter-list filter-list-infrastructure">
               <li class="filter-list-item">
-                <input class="filter-input " type="checkbox" checked name="pool" id="pool">
-                <label class="filter-label" for="pool">Бассейн</label>
+                <input class="filter-input" type="checkbox" checked name="pool" id="pool"><label class="filter-label" for="pool">Бассейн</label>
+
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="checkbox" checked name="parking" id="parking">
-                <label class="filter-label" for="parking">Парковка</label>
+                <input class="filter-input" type="checkbox" checked name="parking" id="parking"><label class="filter-label" for="parking">Парковка</label>
+
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="checkbox" name="wi-fi" id="wi-fi">
-                <label class="filter-label" for="wi-fi">Wi-Fi</label>
+                <input class="filter-input" type="checkbox" name="wi-fi" id="wi-fi"><label class="filter-label" for="wi-fi">Wi-Fi</label>
+
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="filter-item">
+          <fieldset class="filter-item filter-title">
             <legend class="filter-item-title">Тип жилья:</legend>
 
             <ul class="filter-list filter-list-type">
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" checked value="hotel" id="hotel">
-                <label class="filter-label" for="hotel">Гостиница</label>
+                <input class="filter-input " type="radio" name="housing-type" checked value="hotel" id="hotel"><label class="filter-label" for="hotel">Гостиница</label>
+
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" value="motel" id="motel">
-                <label class="filter-label" for="motel">Мотель</label>
+                <input class="filter-input " type="radio" name="housing-type" value="motel" id="motel"><label class="filter-label" for="motel">Мотель</label>
+
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" value="apartments" id="apartments">
-                <label class="filter-label" for="apartments">Апартаменты</label>
+                <input class="filter-input " type="radio" name="housing-type" value="apartments" id="apartments"><label class="filter-label" for="apartments">Апартаменты</label>
+
               </li>
             </ul>
           </fieldset>
@@ -109,22 +109,18 @@
             <div class="filter-range-container">
               <div class="range-block-change">
                 <div class="range-block-min">
-                  <label for="min">
-                    <input type="text" id="min" nane="min" placeholder="Изменение минимальной цены">
-                  </label>
-                  <span>от</span>
+                  <input type="text" id="min" nane="min" placeholder="Изменение минимальной цены">
+                  <label for="min">от</label>
                 </div>
                 <div class="range-block-max">
-                  <label for="max">
-                    <input type="text" id="max" name="max" placeholder="Изменение миксимальной цены">
-                  </label>
-                  <span>до</span>
+                  <input type="text" id="max" name="max" placeholder="Изменение миксимальной цены">
+                  <label for="max">до</label>
                 </div>
               </div>
               <div class="block-change-price">
-                <button type="button" aria-label="Изменить минимальную цену"></button>
+                <button class="filter-toggle-item filter-toggle-min" type="button" aria-label="Изменить минимальную цену"></button>
 
-                <button type="button" aria-label="Изменить максимальную цену"></button>
+                <button class="filter-toggle-item filter-toggle-max" type="button" aria-label="Изменить максимальную цену"></button>
 
               </div>
             </div>
@@ -151,19 +147,19 @@
       </select>
 
       <div class="sorting-mode mode">
-        <a class="mode-tiles mode-item-active" href="#" aria-label="В виде плиток"></a>
+        <a class="sorting-mode-item mode-tiles" href="#" aria-label="В виде плиток"></a>
 
-        <a class="mode-card mode-item-active" href="#" aria-label="В виде карточек"></a>
+        <a class="sorting-mode-item mode-card" href="#" aria-label="В виде карточек"></a>
 
-        <a class="mode-list mode-item-active" href="#" aria-label="В виде списка"></a>
+        <a class="sorting-mode-item mode-list mode-item-active" href="#" aria-label="В виде списка"></a>
 
       </div>
     </section>
 
-    <section class="search-results">
+    <section class="search-results alignment">
       <h2 class="visually-hidden">Результат поиска</h2>
 
-      <ul class="lodging-list alignment">
+      <ul class="lodging-list">
 
         <li class="lodging-item">
 
@@ -191,14 +187,8 @@
 
           <div class="search-results-rating">
             <div class="search-results-rating-stars">
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
+              <span class="rating-star"><img src="img/catalog/star-4.svg" width="91" height="17"
+                  alt="Звезды рейтинга"></span>
             </div>
             <p class="search-results-rating-text">Рейтинг: 8,5</p>
           </div>
@@ -230,12 +220,8 @@
 
           <div class="search-results-rating">
             <div class="search-results-rating-stars">
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
+              <span class="rating-star"><img src="img/catalog/star-3.svg" width="68" height="17"
+                  alt="Звезды рейтинга"></span>
             </div>
             <p class="search-results-rating-text">Рейтинг: 8,9</p>
           </div>
@@ -267,10 +253,8 @@
 
           <div class="search-results-rating">
             <div class="search-results-rating-stars">
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
+              <span class="rating-star"><img src="img/catalog/star-2.svg" width="43" height="17"
+                  alt="Звезды рейтинга"></span>
             </div>
             <p class="search-results-rating-text">Рейтинг: 9,2</p>
           </div>
@@ -302,16 +286,14 @@
 
           <div class="search-results-rating">
             <div class="search-results-rating-stars">
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
-              <span class="rating-star"><img src="img/catalog/star.svg" width="18" height="17"
-                  alt="Звезда рейтинга"></span>
+              <span class="rating-star"><img src="img/catalog/star-2.svg" width="43" height="17"
+                  alt="Звезды рейтинга"></span>
             </div>
             <p class="search-results-rating-text">Рейтинг: 9,2</p>
           </div>
         </li>
       </ul>
-     <div class="show-more alignment">
+     <div class="show-more">
       <a class="button pagination-show-more">Загрузить еще</a>
      </div>
     </section>
@@ -332,7 +314,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#" aria-label="Следующая страница"></a>
+          <a class="pagination-link pagination-next" href="#" aria-label="Следующая страница">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-end" href="#">10</a>
@@ -354,28 +336,29 @@
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p class="subscription-description">Только полезная информация и никакого спама,честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="subscription-container">
           <label class="visually-hidden" for="email">Ваш email</label>
-          <input type="text" id="email" name="email" placeholder="Ваш e-mail">
-          <button class="button subscription-button" type="submit">Подписаться</button>
-        </div>
-      </form>
+          <input type="text" id="email" name="email" placeholder="Ваш e-mail"><button class="button subscription-button" type="submit">Подписаться</button>
+
+        </form>
     </article>
 
   </main>
-
   <footer class="footer">
     <ul class="social">
       <li class="social-item">
-        <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter"></a>
+        <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">
+          <img src="img/twitter.svg" width="18" height="15">
+        </a>
       </li>
       <li class="social-item">
-        <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy" aria-label="Facebook"></a>
-
+        <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy" aria-label="Facebook">
+          <img src="img/facebook.svg" width="10" height="18">
+        </a>
       </li>
       <li class="social-item">
-        <a class="social-link social-link-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="YouTube"></a>
-
+        <a class="social-link social-link-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="YouTube">
+          <img src="img/youtube.svg" width="20.1" height="18">
+        </a>
       </li>
     </ul>
     <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>

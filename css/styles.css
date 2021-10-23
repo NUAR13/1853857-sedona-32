@@ -69,6 +69,7 @@ body{
   display: flex;
   width: 100%;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .navigation-list{
@@ -76,17 +77,15 @@ body{
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 309px;
-  margin-right: auto;
+  max-width: 460px;
   list-style : none;
 }
 
 .navigation-user{
   display: flex;
   flex-wrap: wrap;
-  width: 309px;
-  margin-left: auto;
-  margin-right: 0;
+  max-width: 460px;
+
   align-items: center;
 }
 
@@ -102,12 +101,11 @@ body{
   text-decoration: none;
 }
 
-.navigation-list :nth-child(2) .navigation-link{
+.navigation-item{
   margin-right:  33px;
-  margin-left:  33px;
 }
 
-.navigation-user :nth-child(2) .navigation-link{
+.favorites{
   margin-left: 20px;
   margin-right: 21px;
   padding:0 20px ;
@@ -116,18 +114,11 @@ body{
 .navigation-logo{
   width: 138px;
   height: 65px;
-  position: relative;
+  position: absolute;
+  left: 45%;
 }
 
-.navigation-logo::before{
-  content: "";
-  background-image: url("../img/sedona.svg");
-  background-repeat: no-repeat;
-  display: block;
-  position: absolute;
-  width: 138px;
-  height: 70px;
-}
+
 
 .navigation-search{
   background-image: url("../img/search.svg");
@@ -200,7 +191,7 @@ body{
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 0;
 
 }
 
@@ -208,7 +199,6 @@ body{
   font-size: 22px;
   line-height: 36px;
   color: #333333;
-  margin-top: 23px;
 }
 
 img {
@@ -217,65 +207,24 @@ img {
 }
 
 .benefits-container{
-  display:grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-auto-flow: dense;
+  display: flex;
+}
+
+.benefits-container-two{
+  flex-direction: row-reverse;
 }
 
 .benefits-list{
-  display:grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-auto-flow: dense;
-}
-
-.benefits-item{
-  grid-column: 1/2;
-}
-
-.benefits-item-img{
-  grid-column: 2/-1;
-}
-
-.offer-title{
-  display:grid;
-  grid-template-columns: repeat(3, 400px);
-}
-
-.benefits-item-home{
-  grid-column: 1/2;
-}
-
-.benefits-item-food{
-  grid-column: 2/3;
-}
-
-.benefits-item-gift{
-  grid-column: 3/4;
-}
-
-.benefits-container-two> .benefits-item{
-  grid-column: 3/4;
-}
-
-.benefits-container-two> .benefits-item-img{
-  grid-column: 1/3;
-}
-
-.benefits-item-road{
-  grid-column: 2/3;
-}
-
-.benefits-tourist{
-  grid-column: 3/4;
-}
-
-.benefits-list{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.benefits-img{
-  grid-column: 1/-1;
+
+.offer-title{
+  display: flex;
 }
 
 .benefits-item{
@@ -310,6 +259,7 @@ img {
 
 .benefits-item-description{
   margin-bottom: 0;
+  max-width: 250px;
 }
 
 .offer-title{
@@ -389,8 +339,8 @@ img {
   color: #000000;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 91px;
-  padding-top: 98px;
+  padding-bottom: 98px;
+  padding-top: 61px;
 }
 
 .search-question{
@@ -398,7 +348,6 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -406,8 +355,9 @@ img {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  margin-top: 0;
+  margin: 0 auto;
   margin-bottom: 73px;
+  max-width: 580px;
 }
 
 .search-hotel{
@@ -432,7 +382,7 @@ img {
   background-repeat: no-repeat;
   background-color: #000000;
   color: #FFFFFF;
-  padding-top: 98px;
+  padding-top: 69px;
   padding-bottom: 94px;
   text-align: center;
 }
@@ -442,7 +392,6 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -462,10 +411,8 @@ img {
   color: #000000;
   border: 0;
   width: 600px;
-  height: 60px;
-  padding: 0;
-  padding-left: 22px;
-  padding-right: 19px;
+  padding: 17px 21px;
+
 }
 
 
@@ -473,14 +420,14 @@ img {
   font-size: 20px;
   line-height: 26px;
   border-radius: 0px 10px 10px 0px;
-  height: 60px;
   width: 200px;
-  padding: 0;
+  padding: 17px;
   vertical-align: bottom;
 }
 
 .footer{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 335px 1fr;
   width: 100%;
   margin: 0 auto;
   padding: 40px 71px 30px 72px;
@@ -489,8 +436,6 @@ img {
 .social{
   display: flex;
   flex-wrap: wrap;
-  max-width: 350px;
-  margin-right: auto;
   list-style: none;
   padding: 0;
 }
@@ -501,8 +446,8 @@ img {
 
 .social-link{
   display: block;
-  max-width: 21px;
-  max-height: 16px;
+  width: 21px;
+  height: 16px;
 }
 
 .social-link-twitter img {
@@ -522,7 +467,6 @@ img {
 
 .footer-link-htmlacademy{
   display: block;
-  margin-left: auto;
   width: 115px;
 }
 
@@ -575,20 +519,21 @@ img {
   padding:  0;
   margin-top: 5px;
   margin-bottom: 45px;
+  align-items: center;
 }
 
-.filter-breadcrumbs-item:first-child{
+.filter-breadcrumbs-home{
   display: block;
   background-image: url("../img/catalog/home.svg");
   background-repeat: no-repeat;
   width: 12px;
   height: 11.7px;
-  margin-right: 26px;
   align-self: center;
 }
 
 .filter-breadcrumbs-item{
   font-size: 16px;
+  margin-right: 26px;
 }
 
 .filter-list{
@@ -651,34 +596,38 @@ img {
   vertical-align:text-top;
 }
 
-.range-block-change{
-  display: grid;
-  grid-template-columns: 143px 144px;
-  margin-bottom: 20px;
+.filter-range-container{
+width: 287px;
+
 }
 
-.range-block-min{
-  grid-column: 1/2;
+.range-block-change{
+   display: flex;
+   margin-bottom: 20px;
+   border: 2px solid #FFFFFF;
+   border-radius: 4px;
 }
+.range-block-min{
+  display: inline-block;
+}
+.range-block-max{
+  display: inline-block;
+}
+
 
 .range-block-min input{
-  width: 100%;
+  width: 110px;
   box-sizing: border-box;
-  border-radius: 4px 0px 0px 4px;
-  border: 2px solid #FFFFFF;
+  border:0;
   background-color: transparent;
 }
 
-.range-block-max{
-  grid-column: 2/3;
-}
 
 .range-block-max input{
-  width: 100%;
+  width: 110px;
   box-sizing: border-box;
-  border-radius: 0px 4px 4px 0px;
-  border: 2px solid #FFFFFF;
-  border-left: 0px;
+  border: 0;
+  border-left: 2px solid #FFFFFF;
   background-color: transparent;
 }
 
