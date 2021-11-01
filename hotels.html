@@ -61,7 +61,7 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="filter-breadcrumbs-hotels" aria-label="Гостиницы"><span>Гостиницы</span></a>
+            <a class="filter-breadcrumbs-hotels" href="#" aria-label="Гостиницы"><span>Гостиницы</span></a>
           </li>
         </ul>
       </div>
@@ -75,15 +75,27 @@
 
             <ul class="filter-list filter-list-infrastructure">
               <li class="filter-list-item">
-                <input class="filter-input" type="checkbox" checked name="pool" id="pool"><label class="filter-label" for="pool">Бассейн</label>
+                <label class="filter-label" for="pool">
+                <input class="filter-input visually-hidden" type="checkbox" checked name="pool" id="pool">
+                <span class="control-mark"></span>
+                <span class="filter-control-label">Бассейн</span>
+                </label>
 
               </li>
               <li class="filter-list-item">
-                <input class="filter-input" type="checkbox" checked name="parking" id="parking"><label class="filter-label" for="parking">Парковка</label>
+                <label class="filter-label" for="parking">
+                <input class="filter-input visually-hidden" type="checkbox" checked name="parking" id="parking">
+                <span class="control-mark"></span>
+                <span class="filter-control-label">Парковка</span>
+              </label>
 
               </li>
               <li class="filter-list-item">
-                <input class="filter-input" type="checkbox" name="wi-fi" id="wi-fi"><label class="filter-label" for="wi-fi">Wi-Fi</label>
+                <label class="filter-label" for="wi-fi">
+                <input class="filter-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+                <span class="control-mark"></span>
+                <span class="filter-control-label">Wi-Fi</span>
+              </label>
 
               </li>
             </ul>
@@ -94,15 +106,27 @@
 
             <ul class="filter-list filter-list-type">
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" checked value="hotel" id="hotel"><label class="filter-label" for="hotel">Гостиница</label>
+                <label class="filter-label" for="hotel">
+                <input class="filter-input visually-hidden" type="radio" name="housing-type" checked value="hotel" id="hotel">
+                <span class="control-mark"></span>
+                <span class="filter-control-label">Гостиница</span>
+              </label>
 
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" value="motel" id="motel"><label class="filter-label" for="motel">Мотель</label>
+                <label class="filter-label" for="motel">
+                <input class="filter-input visually-hidden" type="radio" name="housing-type" value="motel" id="motel">
+                <span class="control-mark"></span>
+                <span class="filter-control-label">Мотель</span>
+              </label>
 
               </li>
               <li class="filter-list-item">
-                <input class="filter-input " type="radio" name="housing-type" value="apartments" id="apartments"><label class="filter-label" for="apartments">Апартаменты</label>
+                <label class="filter-label" for="apartments">
+                <input class="filter-input visually-hidden" type="radio" name="housing-type" value="apartments" id="apartments">
+                <span class="control-mark"></span>
+                <span class="filter-control-label">Апартаменты</span>
+                </label>
 
               </li>
             </ul>
@@ -114,19 +138,20 @@
             <div class="filter-range-container">
               <div class="range-block-change">
                 <div class="range-block-min">
-                  <input type="text" id="min" nane="min" placeholder="Изменение минимальной цены">
+                  <input type="text" id="min" nane="min" placeholder="0">
                   <label for="min">от</label>
                 </div>
                 <div class="range-block-max">
-                  <input type="text" id="max" name="max" placeholder="Изменение миксимальной цены">
+                  <input type="text" id="max" name="max" placeholder="9000">
                   <label for="max">до</label>
                 </div>
               </div>
               <div class="block-change-price">
+                <div class="range-scale"></div>
+                <div class="range-bar">
                 <button class="filter-toggle-item filter-toggle-min" type="button" aria-label="Изменить минимальную цену"></button>
-
                 <button class="filter-toggle-item filter-toggle-max" type="button" aria-label="Изменить максимальную цену"></button>
-
+                </div>
               </div>
             </div>
           </fieldset>
@@ -299,7 +324,7 @@
         </li>
       </ul>
      <div class="show-more">
-      <a class="button pagination-show-more">Загрузить еще</a>
+      <a class="button pagination-show-more" href="#">Загрузить еще</a>
      </div>
     </section>
 
