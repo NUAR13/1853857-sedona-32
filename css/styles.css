@@ -25,6 +25,8 @@ src: url('../fonts/ptsans-400.woff2') format('woff2');
 
 html {
   height: 100%;
+
+  background: #F2F2F2;
 }
 
 body {
@@ -137,15 +139,15 @@ body.modal-container-open {
 
   margin-right: 13px;
   padding-top: 11px;
-  padding-bottom: 14px;
+  padding-bottom: 17px;
 }
 
 
 .navigation-item-current::after{
   position: absolute;
-  right: 12px;
+  right: 10px;
   bottom: 0;
-  left: 12px;
+  left: 10px;
 
   max-width: 140px;
   height: 2px;
@@ -209,12 +211,21 @@ body.modal-container-open {
   height: 65px;
 }
 
+.navigation-logo:hover{
+  opacity: 0.6;
+}
+
 .navigation-logo:focus{
   border-radius: 4px;
   outline: 3px solid #756257;
   outline-offset: 4px;
 }
 
+.navigation-logo:active{
+  outline: none;
+
+  opacity: 0.3;
+}
 
 .navigation-search{
   position: relative;
@@ -319,10 +330,10 @@ body.modal-container-open {
   background-color: #fff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, .15);
 }
-/*
+
 .popover-open{
   display: block;
-} Открытие поповера*/
+}
 
 .favorites-popover::before{
   position: absolute;
@@ -488,7 +499,7 @@ body.modal-container-open {
   background-color: #fff;
   background-image: url('../img/index-background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 1200px 485px;
 }
 
 .qreeting-img::after{
@@ -509,7 +520,7 @@ body.modal-container-open {
   max-width: 720px;
   margin: 0 auto;
   padding-top: 61px;
-  padding-bottom: 79px;
+  padding-bottom: 81px;
 
   color: #000;
   background-color: #fff;
@@ -583,13 +594,76 @@ img{
   background-color: #83b3d3;
 }
 
+.benefits-number,
+.benefits-item-number{
+  position: relative;
+}
+
+.benefits-number::before{
+  position: absolute;
+  top: 50%;
+  left: -15px;
+
+
+  width: 10px;
+  height: 2px;
+
+  content: '';
+
+  background-color: #FFFFFF;
+}
+
+
+.benefits-number::after{
+  position: absolute;
+  top: 50%;
+  right: -15px;
+
+
+  width: 10px;
+  height: 2px;
+
+  content: '';
+
+  background-color: #FFFFFF;
+}
+
+.benefits-item-number::before{
+  position: absolute;
+  top: 50%;
+  left: -15px;
+
+
+  width: 10px;
+  height: 2px;
+
+  content: '';
+
+  background-color: #333333;
+}
+
+.benefits-item-number::after{
+  position: absolute;
+  top: 50%;
+  right: -15px;
+
+
+  width: 10px;
+  height: 2px;
+
+  content: '';
+
+  background-color: #333333;
+}
+
+
 .benefits-item-title{
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
 
   max-width: 172px;
-  margin: 0 auto auto 28px;
+  margin: 0 auto  28px;
 
   text-transform: uppercase;
 }
@@ -666,7 +740,7 @@ img{
 
 .benefits-item-gift::before{
   position: absolute;
-  top: 89px;
+  top: 85px;
   left: 50%;
 
   display: block;
@@ -694,10 +768,8 @@ img{
 .search{
   width: 100%;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-right: 245px;
+  padding-top: 58px;
   padding-bottom: 86px;
-  padding-left: 235px;
 
   text-align: center;
 
@@ -721,7 +793,7 @@ img{
 
   max-width: 580px;
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 59px;
 
   color: #333;
 }
@@ -772,7 +844,7 @@ img{
   background-color: #000;
   background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 1200px 411px;
 }
 
 
@@ -780,7 +852,7 @@ img{
   font-size: 30px;
   line-height: 36px;
 
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   text-transform: uppercase;
 }
@@ -790,7 +862,7 @@ img{
   line-height: 26px;
   width: 600px;
   margin: 0 auto;
-  margin-bottom: 43px;
+  margin-bottom: 48px;
 }
 
 .subscription input{
@@ -881,53 +953,48 @@ img{
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0;
   padding: 0;
+  margin-top: 12px;
 
   list-style: none;
 }
 
-.social .social-item:nth-child(2){
-  margin-right: 9px;
-}
-
 .social-item{
-  position: relative;
-
-  align-items: center;
-
-  padding-top: 15px;
+  margin-right: 4px;
 }
 
 .social-link{
   display: flex;
 
-  width: 37px;
-  height: 37px;
+  width: 40px;
+  height: 40px;
 
-  border: 3px solid #fff;
-  fill: #83b3d3;
+  border-radius: 10px;
+
 }
 
 .social-icon{
   margin: auto;
+
+  fill: #83b3d3;
 }
 
-.social-link:hover .social-icon{
+.social-item .social-icon:hover {
   fill: #68a2ca;
 }
 
 .social-link:focus{
-  border: 3px solid #83b3d3;
-  border-radius: 10px;
+  border: 3px solid #68a2ca;
+
   outline: none;
 
   fill: #68a2ca;
 }
 
 .social-link:active{
-  opacity: .3;
-  box-shadow: none;
+  border: none;
+
+  opacity: 0.3;
 
   fill: #68a2ca;
 }
@@ -953,7 +1020,7 @@ img{
   display: block;
 
   width: 160px;
-  margin-top: 3px;
+  margin-top: -4px;
   margin-left: auto;
 }
 
@@ -1031,10 +1098,10 @@ img{
 
   background-color: rgba(255, 255, 255, .6);
 }
-/*
+
 .modal-container-open{
   display: flex;
-} Открытие модального окна*/
+}
 
 .modal{
   position: relative;
@@ -1305,7 +1372,7 @@ img{
 .number-plus-adults::before{
   position: absolute;
   top: 11px;
-  right: 6px;
+  left: 134px;
 
   width: 13px;
   height: 2px;
@@ -1389,8 +1456,11 @@ img{
   margin-bottom: 40px;
 }
 
+.position-children,
 .position-adults{
   position: relative;
+
+  display: inline-block;
 }
 
 .position-children-content{
@@ -1442,10 +1512,10 @@ img{
 
   color: #fff;
 }
-/*
+
 .children-content-open{
   display: block;
-} Открытие подсказки дети модального окна*/
+}
 
 .children-info{
   width: 25px;
@@ -1470,7 +1540,7 @@ img{
   background-color: #333;
   background-image: url('../img/catalog/catalog-background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 1200px 408px;
 }
 
 .filter-form{
@@ -1956,10 +2026,11 @@ img{
 
   cursor: pointer;
 
-  color: #333;
+  color: #333333;
+  background-color: #fff;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
-  background-image: url('../img/catalog/dropdown-2.svg');
+  background-image: url('../img/catalog/dropdown.svg');
   background-repeat: no-repeat;
   background-position: right 21px center;
 
@@ -2060,6 +2131,7 @@ img{
   line-height: 31px;
 
   max-width: 320px;
+  margin-top: -2px;
 
   text-decoration: none;
 
@@ -2107,11 +2179,12 @@ img{
 }
 
 .lodging-item-link:focus{
+  z-index: 1;
+
   width: max-content;
 
   border-radius: 10px;
   outline: 3px solid#83b3d3;
-  outline-offset: -1px;
 }
 
 .lodging-item-link:active{
@@ -2391,8 +2464,8 @@ img{
 }
 
 .subscription-inner{
-  padding-top: 89px;
-  padding-bottom: 137px;
+  padding-top: 87px;
+  padding-bottom: 133px;
 
   text-align: center;
 
