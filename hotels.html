@@ -13,19 +13,19 @@
     <nav class="navigation alignment">
 
       <ul class="navigation-list">
-        <li class="navigation-item ">
+        <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item navigation-item-current">
-          <a class="navigation-link" >Гостиницы</a>
+          <a class="navigation-link">Гостиницы</a>
         </li>
       </ul>
 
-      <a class="navigation-logo"  href="index.html">
-        <img class="navigation-logo-sedona" src ="img/sedona.svg" width ="138" height ="70" alt ="Седона">
+      <a class="navigation-logo" href="index.html">
+        <img class="navigation-logo-sedona" src="img/sedona.svg" width="138" height="70" alt="Седона">
       </a>
 
       <div class="navigation-user">
@@ -39,11 +39,11 @@
             <svg class="navigation-icon" width="18" height="17" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17"><path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
             <span class="favorites-number">12</span>
           </a>
-          <div class="favorites-popover"><!--popover-open  Открытие поповера-->
+          <div class="favorites-popover"><!--popover-open Открытие поповера-->
             <ul class="favorites-container-list">
               <li class="favorites-container-item">
                 <a class="favorites-container-link" href="#">
-                  <img class="favorites-container-img" src="img/catalog/villas-at-poco-diablo.jpg" width="48" height="48" alt="Отель в избранном">
+                  <img class="favorites-container-img" src="img/catalog/desert-quail-inn.jpg" width="48" height="48" alt="Отель в избранном">
                   <div class="favorites-container-info">
                     <h3 class="favorites-item-title">Desert Quail Inn</h3>
                     <p class="type-favorites">Мотель</p>
@@ -55,7 +55,7 @@
               </li>
               <li class="favorites-container-item">
                 <a class="favorites-container-link" href="#">
-                  <img class="favorites-container-img" src="img/catalog/desert-quail-inn.jpg" width="48" height="48" alt="Отель в избранном">
+                  <img class="favorites-container-img" src="img/catalog/villas-at-poco-diablo.jpg" width="48" height="48" alt="Отель в избранном">
                   <div class="favorites-container-info">
                     <h3 class="favorites-item-title">Villas at Poco Diablo</h3>
                     <p class="type-favorites">Апартаменты</p>
@@ -85,8 +85,8 @@
         <h1>Гостиницы Седоны</h1>
         <ul class="filter-breadcrumbs">
           <li class="filter-breadcrumbs-item">
-            <a class="filter-breadcrumbs-link " href="index.html" aria-label="Главная">
-              <svg class="filter-breadcrumbs-home" width="12" height="12" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z"/></svg>
+            <a class="filter-breadcrumbs-link" href="index.html" aria-label="Главная">
+              <svg class="filter-breadcrumbs-home" width="12" height="12" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z"/></svg>
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -384,8 +384,8 @@
         <label class="amount-text" for="amount-elements">Гостиниц на странице:</label>
         <select class="select-control" id="amount-elements" name="amount-element">
           <option value="one">1</option>
-          <option value=" two">2</option>
-          <option value="three ">3</option>
+          <option value="two">2</option>
+          <option value="three">3</option>
           <option selected value="four">4</option>
         </select>
       </div>
@@ -397,7 +397,6 @@
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш email</label>
           <input type="text" id="email" name="email" placeholder="Ваш e-mail"><button class="button subscription-button" type="submit">Подписаться</button>
-
         </form>
     </article>
 
@@ -435,13 +434,13 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="modal-group">
               <label class="arrival-date" for="arrival">Дата заезда:</label>
-              <input class="auth-form-field" type="text" id="arrival" name="arrival" placeholder="Укажите дату" required>
+              <input class="auth-form-field" type="text" id="arrival" name="arrival" placeholder="Укажите дату" value="27 апреля 2020" required>
                 <span class="img-calendar"></span>
               <span class="error-date">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="modal-group">
               <label class="arrival-date" for="departure">Дата выезда:</label>
-              <input class="auth-form-field" type="text" id="departure" name="arrival" placeholder="Укажите дату" required>
+              <input class="auth-form-field" type="text" id="departure" name="arrival" placeholder="Укажите дату" value="1 сентября 2021" required>
                 <span class="img-calendar"></span>
               <span class="error-date acceptable-date">На эти даты есть свободные номера. Пока есть.</span>
             </p>
@@ -450,23 +449,24 @@
               <label class="arrival-date number-adults" for="adults">Взрослые:</label>
                 <div class="position-adults">
                   <button class="number-minus-adults" type="button"></button>
-                  <input class="auth-form-field auth-form " type="number" id="adults" name="adults" value="2">
+                  <input class="auth-form-field auth-form" type="number" id="adults" name="adults" value="2">
                   <button class="number-plus-adults" type="button"></button>
                 </div>
-                <div class="position-children-content">
+
                  <label class="arrival-date number-children" for="children">Дети:</label>
+                 <div class="children-info-content">
                    <button class="children-info" type="button">i</button>
-                   <div class="position-children">
-                   <button class="number-minus" type="button"></button>
-                      <input class="auth-form-field auth-form" type="number" id="children" name="children" value="1">
-                   <button class="number-plus" type="button"></button>
-                   </div>
                    <div class="children-content"><!--children-content-open Открытие подсказки дети модального окна-->
                      <p class="info">
                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                      </p>
                    </div>
-                </div>
+                   </div>
+                  <div class="position-children">
+                   <button class="number-minus" type="button"></button>
+                      <input class="auth-form-field auth-form" type="number" id="children" name="children" value="1">
+                   <button class="number-plus" type="button"></button>
+                   </div>
             </div>
           </form>
 
