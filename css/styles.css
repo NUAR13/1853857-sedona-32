@@ -394,6 +394,7 @@ body.modal-container-open {
   display: inline-block;
 
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .favorites-container-info{
@@ -502,6 +503,12 @@ body.modal-container-open {
   background-size:cover;
 }
 
+.qreeting-img img {
+  display: block;
+
+  margin: 0 auto;
+}
+
 .qreeting-img::after{
   position: absolute;
   top: 428px;
@@ -547,9 +554,8 @@ body.modal-container-open {
 }
 
 img{
-  display: block;
-
-  margin: 0 auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .benefits-container{
@@ -592,6 +598,10 @@ img{
 
   color: #fff;
   background-color: #83b3d3;
+}
+
+.benefits-item-img img {
+  display: block;
 }
 
 .benefits-number,
@@ -1465,27 +1475,29 @@ img{
   display: inline-block;
 }
 
-.children-content{
-  position: absolute;
-  z-index: 3;
-  top: 55px;
-  transform: translateX(-45%);
+.children-info{
+  width: 25px;
+  height: 25px;
+  margin-right: 19px;
+  margin-top: 14px;
 
-  display: none;
+  cursor: pointer;
 
-  width: 256px;
-  padding: 18px 18px 25px 22px;
-
-  border-radius: 10px;
-  background: #333;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  background-color: #83b3d3;
 }
 
-.children-content-open{
+.children-info:hover{
+  background-color: #68A2CA;
+}
+
+.children-info:hover ~ .info{
   display: block;
 }
 
-.children-content::before{
+.info::before{
   position: absolute;
   z-index: 2;
   top: -6px;
@@ -1502,27 +1514,25 @@ img{
 }
 
 .info{
+  position: absolute;
+  z-index: 3;
+  top: 55px;
+  transform: translateX(-45%);
+
+  display: none;
+
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
 
   margin: 0;
+  width: 256px;
+  padding: 18px 18px 25px 22px;
 
+  border-radius: 10px;
+  background: #333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
   color: #fff;
-}
-
-.children-info{
-  width: 25px;
-  height: 25px;
-  margin-right: 19px;
-  margin-top: 14px;
-
-  cursor: pointer;
-
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  background-color: #83b3d3;
 }
 
 .filter{
@@ -2138,6 +2148,10 @@ img{
   margin-top: 3px;
 }
 
+.lodging-item-img{
+  display: block;
+}
+
 .lodging-item-link-img:hover{
   opacity: .6;
 }
@@ -2196,7 +2210,7 @@ img{
   font-size: 18px;
   line-height: 23px;
 
- display: inline-block;
+  display: inline-block;
 
   width: 157px;
   margin: 0;
